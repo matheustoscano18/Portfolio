@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --cor-cabecalho: #5637A6;
+    --cor-pagina-fundo: #15151d;
+    --cor-sobre: #2E2D33;
+    --fonte-nav: "Orbitron", sans-serif;
+    --fonte-site:  "Quicksand", sans-serif;
+    --cor-texto: #d3d3d3;
+    --cor-hover: #ffffff;
+    --cor-hover-bg: #4901FA;
+    --cor-h2: rgb(89, 1, 161);
+    --sombra-texto: 1px 2px 2px black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* COMEÇO DO CABEÇALHO */
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--fonte-nav);
+    background: #23232e;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(-45deg) translate(-5px, -7px);
+}
+
+/* FIM DO CABEÇALHO */
+
+main {
+    background-color: var(--cor-pagina-fundo);
+}
+
+/* COMEÇO HOME */
+#home {
+    width: auto;
+    height: 80vh;
+    padding: 10px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: var(--cor-texto);
+    text-shadow: 2px 2px 1px rgb(77, 4, 173);
+}
+
+#home img {
+    width: 400px;
+    margin-top: 30px auto;
+    border-radius: 50%;
+    box-shadow: 3px 3px 7px 2px var(--cor-header-fundo);
+}
+
+#home h1, h2, p {
+    font-family: var(--fonte-site);
+}
+
+#home h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#home p {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#curriculo-download {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--fonte-site);
+    color: var(--cor-texto);
+    background-color: var(--cor-hover-bg);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+#curriculo-download:hover {
+    transform: scale(1.1);
+    background-color: var(--cor-cabecalho);
+    color: #fff;
+}
+
+/* FIM HOME */
+
+/* COMEÇO SOBRE MIM */
+#sobre-foto {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px 20px 0px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#sobre {
+    width: 60vw;
+    padding: 15px;
+    margin: 30px auto;
+    color: var(--cor-texto);
+    text-shadow: var(--sombra-texto);
+
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    font-family: var(--fonte-nav);
+    color: var(--cor-h2);
+    text-shadow: 1px 1px 2px var(--cor-texto);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#sobre p {
+    font-size: 1.3rem;
+    font-family: var(--fonte-site);
+    font-weight: 400;
+    text-align:  left;
+}
+/* FIM SOBRE MIM */
+
+/* COMEÇO TECNOLOGIAS */
+
+#tecnologias {
+    width: 99vw;
+    height: 90vh;
+    margin-bottom: 100px;
+}
+
+#tecnologias h2 {
+    font-family: var(--fonte-nav);
+    font-size: 2.5rem;
+    color: var(--cor-h2);
+    text-shadow: 1px 1px 2px var(--cor-texto);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#tech-logos {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tech-logos img {
+    width: 60px;
+    height: 60px;
+}
+
+.tech-info {
+    width: 14vw;
+    height: 30vh;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: rgba(110, 102, 102, 0.384);
+    box-shadow: 1px 1px 2px rgb(110, 109, 109);
+    text-align: center; 
+    font-family: var(--fonte-site);
+    text-shadow: var(--sombra-texto);
+    color: var(--cor-texto);
+    transition: 0.3s ease;
+    overflow-y: hidden;
+}
+
+.tech-info h3 {
+    padding: 15px;
+}
+
+.separador {
+    display: flex;
+    
+}
+
+.tech-info:hover {
+    transform: scale(1.1);
+}
+
+/* FIM TECNOLOGIAS */
+
+/* COMEÇO PROJETOS */
+#projetos {
+    width: 99vw;
+    margin-bottom: 100px;
+}
+
+#projetos h2 {
+    font-family: var(--fonte-nav);
+    color: var(--cor-h2);
+    text-shadow: 1px 1px 2px var(--cor-texto);
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+}
+
+#project-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.project-box {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-family: var(--fonte-site);
+    color: var(--cor-texto);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0.5px 0.5px 1px 3px var(--cor-hover-bg);
+}
+
+.project-box h3 {
+    padding: 10px;
+}
+
+.project-box img {
+    width: 20vw;
+    padding: 10px;
+}
+
+.project-box p {
+    padding: 30px 10px;
+    text-align: center;
+    height: 150px;
+    overflow: hidden;
+}
+
+.btn-repositorio {
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: var(--fonte-site);
+    color: var(--cor-texto);
+    background-color: var(--cor-hover-bg);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-repositorio:hover {
+    transform: scale(1.1);
+    background-color: #494c63;
+}
+
+/* FIM PROJETOS */
+
+/* COMEÇO CONTATOS */
+
+#contato {
+    width: 99vw;
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+    font-family: var(--fonte-site);
+}
+
+#contato h3 {
+    font-family: var(--fonte-nav);
+    color: var(--cor-texto);
+    text-shadow: 1px 1px 2px var(--cor-h2);
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+
+.contato-info, a {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contato-info img {
+    width: 25px;
+    margin: 15px;
+}
+
+.contato-info a:hover {
+    color: rgb(137, 80, 212);
+}
+
+/* FIM CONTATOS */
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.active {
+        display: flex;
+        position: absolute;
+        top: 5vh;
+        left: 0;
+        width: 100vw;
+        background-color: var(--cor-cabecalho);
+    }
+
+    nav a {
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Ajustes para telas muito pequenas (smartphones em modo retrato) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: row;
+        padding: 5px; /* Remover padding para centralizar */
+    }
+
+    nav a {
+        padding: 10px; /* Aumentar o padding vertical */
+        text-align: center; /* Centralizar o texto */
+    }
+
+    .cabecalho > #logo {
+        height: 55%; /* Ajusta a altura do logo */
+    }
+}
