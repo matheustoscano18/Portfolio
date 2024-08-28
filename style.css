@@ -40,6 +40,7 @@ nav {
     font-family: var(--fonte-nav);
     background: #23232e;
     height: 8vh;
+    overflow-y: hidden;
 }
 
 .nav-list {
@@ -65,7 +66,7 @@ nav {
     transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -91,6 +92,7 @@ nav {
 
     .mobile-menu {
         display: block;
+        overflow: hidden;
     }
 }
 
@@ -391,47 +393,3 @@ main {
 
 /* MEDIA QUERIES */
 
-
-@media (max-width: 768px) {
-    nav {
-        display: none;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav.active {
-        display: flex;
-        position: absolute;
-        top: 5vh;
-        left: 0;
-        width: 100vw;
-        background-color: var(--cor-cabecalho);
-    }
-
-    nav a {
-        padding: 15px 0;
-        text-align: center;
-        width: 100%;
-    }
-}
-
-/* Ajustes para telas muito pequenas (smartphones em modo retrato) */
-@media (max-width: 480px) {
-    nav {
-        flex-direction: row;
-        padding: 5px; /* Remover padding para centralizar */
-    }
-
-    nav a {
-        padding: 10px; /* Aumentar o padding vertical */
-        text-align: center; /* Centralizar o texto */
-    }
-
-    .cabecalho > #logo {
-        height: 55%; /* Ajusta a altura do logo */
-    }
-}
