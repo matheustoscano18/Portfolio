@@ -23,13 +23,17 @@
 
 /* COMEÇO DO CABEÇALHO */
 
-a {
+.logo {
+    width: 120px;
+}
+
+nav a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
 
-a:hover {
+nav a:hover {
     opacity: 0.7;
 }
 
@@ -64,36 +68,6 @@ nav {
     background: #fff;
     margin: 8px;
     transition: 0.3s;
-}
-
-@media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .nav-list {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: #23232e;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-    }
-
-    .mobile-menu {
-        display: block;
-        overflow: hidden;
-    }
 }
 
 .nav-list.active {
@@ -132,10 +106,10 @@ main {
 /* COMEÇO HOME */
 #home {
     width: auto;
-    height: 80vh;
+    height: 70vh;
     padding: 10px;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    margin-left: 20vw;
+    margin-right: 30vw;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -145,10 +119,10 @@ main {
 }
 
 #home img {
-    width: 400px;
-    margin-top: 30px auto;
+    width: 350px;
     border-radius: 50%;
-    box-shadow: 3px 3px 7px 2px var(--cor-header-fundo);
+    box-shadow: 1px 1px 6px 2px var(--cor-hover-bg);
+    margin-right: 20px;
 }
 
 #home h1, h2, p {
@@ -156,13 +130,19 @@ main {
 }
 
 #home h1 {
-    font-size: 4rem;
+    font-size: 2.6rem;
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 #home p {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#titulo-home {
+    display: inline;
 }
 
 #curriculo-download {
@@ -181,25 +161,26 @@ main {
 
 #curriculo-download:hover {
     transform: scale(1.1);
-    background-color: var(--cor-cabecalho);
+    background-color: #8400ff;
     color: #fff;
 }
 
 /* FIM HOME */
 
 /* COMEÇO SOBRE MIM */
-#sobre-foto {
-    height: 60vh;
+#sobre-mim {
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 60px 20px 0px;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+    overflow: hidden;
 }
 
-#sobre {
+#sobre-text {
     width: 60vw;
     padding: 15px;
     margin: 30px auto;
@@ -208,21 +189,22 @@ main {
 
 }
 
-#sobre h2 {
+#sobre-text h2 {
     font-size: 2.5rem;
     font-family: var(--fonte-nav);
     color: var(--cor-h2);
     text-shadow: 1px 1px 2px var(--cor-texto);
-    text-align: center;
     padding-bottom: 30px;
+    text-align: center;
 }
 
-#sobre p {
-    font-size: 1.3rem;
+#sobre-text p {
+    font-size: 1.2rem;
     font-family: var(--fonte-site);
     font-weight: 400;
-    text-align:  left;
+    text-align: left;
 }
+
 /* FIM SOBRE MIM */
 
 /* COMEÇO TECNOLOGIAS */
@@ -276,7 +258,6 @@ main {
 
 .separador {
     display: flex;
-    
 }
 
 .tech-info:hover {
@@ -345,11 +326,12 @@ main {
     background-color: var(--cor-hover-bg);
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .btn-repositorio:hover {
     transform: scale(1.1);
-    background-color: #494c63;
+    background-color: #8400ff;
 }
 
 /* FIM PROJETOS */
@@ -393,3 +375,81 @@ main {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* MEDIA QUERY HEADER */
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        overflow: hidden;
+    }
+
+    /* MEDIA QUERY HOME */
+    #home {
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home img {
+        width: 120px;
+        margin-top: 100px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #home h1 {
+        font-size: 1.9rem;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    #home p {
+        font-size: 0.8rem;
+    }
+
+    #curriculo-download {
+        font-size: 13px;
+    }
+
+    /* MEDIA QUERY SOBRE */
+    #sobre-mim {
+        margin-bottom: 0px;
+    }
+
+    #sobre-text {
+        width: 70vw;
+    }
+
+    #sobre-text h2 {
+        font-size: 1.5rem;
+    }
+
+    #sobre-text p {
+        font-size: 0.7rem;
+    }
+
+    /* MEDIA QUERY TECNOLOGIAS */
+    
+}
