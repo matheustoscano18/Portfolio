@@ -207,7 +207,7 @@ main {
 
 #tecnologias {
     width: 99vw;
-    height: 99vh;
+    height: 80vh;
 }
 
 #tecnologias h2 {
@@ -248,6 +248,10 @@ main {
 
 .tech-info h3 {
     padding: 15px;
+}
+
+.tech-info p {
+    font-size: 0.8rem;
 }
 
 .separador {
