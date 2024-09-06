@@ -170,19 +170,17 @@ main {
 
 /* COMEÇO SOBRE MIM */
 #sobre-mim {
-    height: 70vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
 #sobre-text {
     width: 60vw;
-    padding: 15px;
-    margin: 30px;
+    margin: 15px;
     color: var(--cor-texto);
     text-shadow: var(--sombra-texto);
+    margin-bottom: 200px;
 }
 
 #sobre-text h2 {
@@ -207,7 +205,7 @@ main {
 
 #tecnologias {
     width: 99vw;
-    height: 99vh;
+    margin-bottom: 100px;
 }
 
 #tecnologias h2 {
@@ -221,7 +219,6 @@ main {
 
 #tech-logos {
     display: flex;
-    padding: 20px;
     flex-direction: column;
     align-items: center;
     overflow-y: hidden;
@@ -234,7 +231,7 @@ main {
 
 .tech-info {
     width: 20vw;
-    padding: 20px;
+    padding: 10px;
     margin: 20px;
     border-radius: 5px;
     background-color: rgba(110, 102, 102, 0.384);
@@ -433,12 +430,10 @@ main {
     }
 
     /* MEDIA QUERY SOBRE */
-    #sobre-mim {
-        margin-bottom: 50px;
-    }
 
     #sobre-text {
         width: 70vw;
+        margin-bottom: 100px;
     }
 
     #sobre-text h2 {
@@ -452,8 +447,7 @@ main {
 
     /* MEDIA QUERY TECNOLOGIAS */
     #tecnologias {
-        height: 115vh;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
         overflow-y: hidden;
     }
 
