@@ -1,0 +1,54 @@
+/* COMEÇO CONTATOS */
+
+#contato {
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+    font-family: var(--fonte-site);
+}
+
+#contato h3 {
+    font-family: var(--fonte-nav);
+    color: var(--cor-texto);
+    text-shadow: 1px 1px 2px var(--cor-h2);
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+
+.contato-info, a {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contato-info img {
+    width: 25px;
+    margin: 15px;
+}
+
+.contato-info a:hover {
+    color: rgb(137, 80, 212);
+}
+
+/* FIM CONTATOS */
+
+@media (max-width: 480px) {
+    #contato {
+        padding: 20px;
+    }
+
+    #contato h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .contato-info, a {
+        font-size: 3vw;
+    }
+
+    .contato-info img {
+        width: 20px;
+    }
+}

@@ -1,0 +1,123 @@
+/* COMEÇO PROJETOS */
+#projetos {
+    margin-bottom: 100px;
+}
+
+#projetos h2 {
+    font-family: var(--fonte-nav);
+    color: var(--cor-h2);
+    text-shadow: 1px 1px 2px var(--cor-texto);
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+}
+
+#project-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.project-box {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-site);
+    color: var(--cor-texto);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid var(--cor-hover-bg);
+}
+
+.project-box h3 {
+    padding: 10px;
+}
+
+.project-box img {
+    width: 20vw;
+    padding: 10px;
+}
+
+.project-box p {
+    padding: 30px 10px;
+    text-align: center;
+    height: 20vh;
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+
+.btn-repositorio {
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: var(--fonte-site);
+    color: var(--cor-texto);
+    background-color: var(--cor-hover-bg);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-repositorio:hover {
+    transform: scale(1.1);
+    background-color: #8400ff;
+}
+
+/* FIM PROJETOS */
+
+@media (max-width: 768px) {
+    /* MEDIA QUERY PROJETOS */
+    #projetos {
+        margin-bottom: 20px;
+    }
+
+    #projetos h2 {
+        font-size: 1.5rem;
+    }
+
+    #project-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-box {
+        width: 75vw;
+        margin-bottom: 30px;
+    }
+
+    .project-box h3 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .project-box img {
+        width: 50vw;
+    }
+
+    .project-box p {
+        font-size: 2.5vw;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    #projetos h2 {
+        padding-bottom: 30px;
+    }
+
+    .project-box {
+        height: auto;
+    }
+
+    .project-box h3 {
+        font-size: 0.9rem;
+    }
+
+    .project-box p {
+        font-size: 0.8rem;
+    }
+}
