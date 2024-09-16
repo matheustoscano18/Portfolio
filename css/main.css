@@ -23,6 +23,7 @@
 
 main {
     background-color: var(--cor-pagina-fundo);
+    width: 100vw;
 }
 
 /* MEDIA QUERIES */
