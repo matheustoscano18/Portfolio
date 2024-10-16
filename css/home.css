@@ -1,102 +1,100 @@
-/* COMEÇO HOME */
 #home {
-    width: auto;
-    height: 80vh;
-    padding: 10px;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    color: var(--cor-texto);
-    text-shadow: 2px 2px 1px rgb(77, 4, 173);
+  width: auto;
+  height: 80vh;
+  padding: 10px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  color: var(--cor-texto);
+  text-shadow: 2px 2px 1px rgb(77, 4, 173);
 }
 
 #home img {
-    width: 300px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 6px 2px var(--cor-hover-bg);
-    margin-right: 20px;
-    margin-bottom: 10px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 6px 2px var(--cor-hover-bg);
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-#home h1, h2, p {
-    font-family: var(--fonte-site);
+#home h1,
+h2,
+p {
+  font-family: var(--fonte-site);
 }
 
 #home h1 {
-    font-size: 2.6rem;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 20px;
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 #home p {
-    font-weight: 400;
-    font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 #titulo-home {
-    display: inline;
+  display: inline;
 }
 
 #curriculo-download {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: var(--fonte-site);
-    color: var(--cor-texto);
-    background-color: var(--cor-hover-bg);
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.5s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--fonte-site);
+  color: var(--cor-texto);
+  background-color: var(--cor-hover-bg);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.5s ease;
 }
 
 #curriculo-download:hover {
-    transform: scale(1.1);
-    background-color: #8400ff;
-    color: #fff;
+  transform: scale(1.1);
+  background-color: #8400ff;
+  color: #fff;
 }
 
-/* FIM HOME */
-
 @media (max-width: 768px) {
-    /* MEDIA QUERY HOME */
-    #home {
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-    }
+  #home {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
 
-    #home img {
-        width: 120px;
-        margin-top: 100px;
-        text-align: center;
-        margin-right: 0;
-    }
+  #home img {
+    width: 120px;
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 0;
+  }
 
-    #home h1 {
-        font-size: 1.9rem;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
+  #home h1 {
+    font-size: 1.9rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
 
-    #home p {
-        font-size: 0.8rem;
-    }
+  #home p {
+    font-size: 0.8rem;
+  }
 
-    #curriculo-download {
-        font-size: 13px;
-    }
+  #curriculo-download {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 480px) {
-    #home {
-        padding: 0;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
+  #home {
+    padding: 0;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }

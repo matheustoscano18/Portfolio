@@ -1,35 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 :root {
-    --cor-cabecalho: #5637A6;
-    --cor-pagina-fundo: #15151d;
-    --cor-sobre: #2E2D33;
-    --fonte-nav: "Orbitron", sans-serif;
-    --fonte-site:  "Quicksand", sans-serif;
-    --cor-texto: #d3d3d3;
-    --cor-hover: #ffffff;
-    --cor-hover-bg: #4901FA;
-    --cor-h2: rgb(89, 1, 161);
-    --sombra-texto: 1px 2px 2px black;
+  --cor-cabecalho: #5637a6;
+  --cor-pagina-fundo: #15151d;
+  --cor-sobre: #2e2d33;
+  --fonte-nav: "Orbitron", sans-serif;
+  --fonte-site: "Quicksand", sans-serif;
+  --cor-texto: #d3d3d3;
+  --cor-hover: #ffffff;
+  --cor-hover-bg: #4901fa;
+  --cor-h2: rgb(89, 1, 161);
+  --sombra-texto: 1px 2px 2px black;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 main {
-    background-color: var(--cor-pagina-fundo);
-    width: 100vw;
+  background-color: var(--cor-pagina-fundo);
+  width: 100vw;
 }
 
-/* MEDIA QUERIES */
-
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
 }

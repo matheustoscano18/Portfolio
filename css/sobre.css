@@ -1,60 +1,55 @@
-/* COMEÇO SOBRE MIM */
 #sobre-mim {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 #sobre-text {
-    width: 60vw;
-    margin: 15px;
-    color: var(--cor-texto);
-    text-shadow: var(--sombra-texto);
-    margin-bottom: 200px;
+  width: 60vw;
+  margin: 15px;
+  color: var(--cor-texto);
+  text-shadow: var(--sombra-texto);
+  margin-bottom: 200px;
 }
 
 #sobre-text h2 {
-    font-size: 2.5rem;
-    font-family: var(--fonte-nav);
-    color: var(--cor-h2);
-    text-shadow: 1px 1px 2px var(--cor-texto);
-    padding-bottom: 30px;
-    text-align: center;
+  font-size: 2.5rem;
+  font-family: var(--fonte-nav);
+  color: var(--cor-h2);
+  text-shadow: 1px 1px 2px var(--cor-texto);
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 #sobre-text p {
-    font-size: 1.2rem;
-    font-family: var(--fonte-site);
-    font-weight: 400;
-    text-align: left;
+  font-size: 1.2rem;
+  font-family: var(--fonte-site);
+  font-weight: 400;
+  text-align: left;
 }
 
-/* FIM SOBRE MIM */
-
 @media (max-width: 768px) {
-    /* MEDIA QUERY SOBRE */
+  #sobre-text {
+    width: 70vw;
+    margin-bottom: 100px;
+  }
 
-    #sobre-text {
-        width: 70vw;
-        margin-bottom: 100px;
-    }
+  #sobre-text h2 {
+    font-size: 1.5rem;
+  }
 
-    #sobre-text h2 {
-        font-size: 1.5rem;
-    }
-
-    #sobre-text p {
-        margin-left: 30px;
-        font-size: 0.8rem;
-    }
+  #sobre-text p {
+    margin-left: 30px;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 480px) {
-    #sobre-mim {
-        margin-bottom: 0px;
-    }
+  #sobre-mim {
+    margin-bottom: 0px;
+  }
 
-    #sobre-text p {
-        margin: 0px;
-    }
+  #sobre-text p {
+    margin: 0px;
+  }
 }
