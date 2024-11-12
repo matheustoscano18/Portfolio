@@ -34,6 +34,7 @@
 
 .project-box h3 {
     padding: 10px;
+    font-size: 1rem;
 }
 
 .project-box img {
@@ -43,6 +44,7 @@
 
 .project-box p {
     padding: 30px 10px;
+    height: 20vh;
     text-align: center;
     overflow: hidden;
     font-size: 0.8rem;
