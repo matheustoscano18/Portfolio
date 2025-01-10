@@ -22,7 +22,7 @@
 }
 
 main {
-  background: linear-gradient(to right, #000000, #434343);
+  background-color: var(--cor-pagina-fundo);
   width: 100vw;
 }
 
